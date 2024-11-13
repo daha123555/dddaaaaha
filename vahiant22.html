@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Задание 13</title>
+</head>
+
+<body>
+
+    <div>
+        <button id="changeButton">Поменять</button>
+        <input type="text" id="input1" placeholder="Введите текст 1">
+        <input type="text" id="input2" placeholder="Введите текст 2">
+    </div>
+
+    <script>
+        document.getElementById('changeButton').addEventListener('click', function() {
+            var input1Value = document.getElementById('input1').value;
+            var input2Value = document.getElementById('input2').value;
+
+            document.getElementById('input1').value = input2Value;
+            document.getElementById('input2').value = input1Value;
+        });
+    </script>
+
+</body>
+
+</html>
